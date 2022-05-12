@@ -3,4 +3,8 @@ iframe {
     width: 50%;
  }
 
- 
+body{
+    background-image: url(media/fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
