@@ -4,7 +4,53 @@ iframe {
  }
 
 body{
-    background-image: url(media/fondo.jpg);
+    /*Fondo*/
+    background-image: url(media/fondo7.jpg);
+    width: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    /* Barra de desplazamiento eje X*/
+    overflow-x: hidden;
+   
+}
+
+.minis {
+    width: 800px;
+    
+}
+
+.Carrusel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenes{
+    width: 800px;
+    position: relative;
+}
+
+/*Botones*/ 
+.boton {
+    font-size: 30px;/*Tamaño de la letra*/
+    width: 50px; /*Ancho del boton*/
+    height: 50px; /*Alto del boton*/
+    line-height: 50px; /*Grosor borde del boton*/
+    border-radius: 50%; /*Define la forma del boton*/
+    background-color: rgba(0,0,0,.7);/*Color del Fondo del boton*/
+    text-align: center;/*Centrado del texto*/
+    font-weight: bold;/*Ancho de la letra (usado para hacer Negrita)*/
+    position: absolute; /*Posisionado de la flecha*/
+    color:#fff; /*Color del texto*/
+    box-shadow: 0 0 10px rgba (255,255,255,.6);/*Sombras*/
+}
+
+.izq{
+    left: 25%;
+    top: 895px;
+}
+        
+.der{
+    right: 25%;
+    top: 895px
 }

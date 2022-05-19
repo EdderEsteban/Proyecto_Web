@@ -8,8 +8,10 @@
 	<link rel="icon"  href="media/inicioIco.ico">
 	<link rel="stylesheet" type="text/css" href="Estilo.css">
 	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<script src="Jscript.js"></script>
 </head>
-<body>
+<body onload="Iniciar()">
+	
 	<header>
 		<nav>
 			<ul>
@@ -19,26 +21,44 @@
 			</ul>
 		</nav>
 	</header>
-	<h1>
-		Programa Atención Primaria de la Salud Pueyrredon
-	</h1>
-	<h3>
-		Registro diario de consultas y atenciones domiciliarias
-	</h3>
-	<img height="400" src="media/Ministerio.jpg">
-	<p>
-		Ministerio de Salud, San Luis, Argentina. Edificio Proyección al Futuro 
-	</p>
+	<article>
+		<h1>
+			Programa Atención Primaria de la Salud Pueyrredon
+		</h1>
+		<h3>
+			Registro diario de consultas y atenciones domiciliarias
+		</h3>
+		<img class="minis" src="media/Ministerio.jpg">
+		<p>
+			Ministerio de Salud, San Luis, Argentina. Edificio Proyección al Futuro 
+		</p>
 
-	<h4>
-		Nuestra Mision
-	</h4>
-	<p>
-		La Misión del Programa Atención Primaria de la Salud es garantizar el derecho a la salud como fundamental de la persona, a través de la promoción de la Salud, prevención de enfermedades, provisión de servicios de atención y la rehabilitación. Para ello debe profundizar la gobernanza de salud, a través de la rectoría, regulación, planificación y coordinación, articulando a los actores del sistema, con VALORES tales como:
-	<br>* El derecho a la salud
-	<br>* Equidad social
-	<br>* Solidaridad
-	</p>
+		<h4>
+			Nuestra Mision
+		</h4>
+		<p>
+			La Misión del Programa Atención Primaria de la Salud es garantizar el derecho a la salud como fundamental de la persona, a través de la promoción de la Salud, prevención de enfermedades, provisión de servicios de atención y la rehabilitación. Para ello debe profundizar la gobernanza de salud, a través de la rectoría, regulación, planificación y coordinación, articulando a los actores del sistema, con VALORES tales como:
+			<ul class="list1">
+				<li>El derecho a la salud</li>
+				<li>Equidad social</li>
+				<li>Solidaridad</li>
+			</ul>
+			
+		</p>
+	</article>
+
+	<div class="Carrusel">
+		<div>
+			<img src="media/Cerro.jpg" class="imagenes" id="imgcar">
+		</div>
+		
+		<div>
+			<button class="izq boton" onclick="izquierda()">&#60</button>
+		</div>
+		<div>
+			<button class="der boton" onclick="derecha()">&#62</button>
+		</div>
+	</div>
 	
 </body>
 </html>
