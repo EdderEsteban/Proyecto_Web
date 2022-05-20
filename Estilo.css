@@ -19,7 +19,14 @@ body{
     
 }
 
+/*Titulo Carrusel*/
+.h2{
+    text-align: center;
+    margin-top: 25px;
+}
+
 .Carrusel{
+    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,10 +54,24 @@ body{
 
 .izq{
     left: 25%;
-    top: 895px;
+    top: 1230px;
 }
         
 .der{
     right: 25%;
-    top: 895px
+    top: 1230px
+}
+
+.estad{
+    left: 48%;   
+    top: 1070px;   
+}
+
+/*graficos pag Estadisticas*/
+.gr{
+    margin: auto;
+    display: block;
+    width: 800px;
+    height: 400px;
+    
 }

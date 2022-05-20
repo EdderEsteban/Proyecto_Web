@@ -6,8 +6,9 @@
 	<title>Estadisticas</title>
 	<link rel="icon"  href="media/estadico.ico">
 	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<script src="Jscript.js"></script>
 </head>
-<body>
+<body onload="Iniciar()">
 	<header>
 		<nav>
 			<ul>
@@ -31,14 +32,32 @@
 			<br>*Total Diario de Atenciones Semanal
 		</p>
 	</div>
-	<div>
+	<div>	
+		<div>
+			<iframe class="gr" src="https://docs.google.com/spreadsheets/d/e/2CAIWO3em5TUhbz3vOwrLlARsN5ONhWxYtm4vEM87Ov2dPQffgcnNkGKdmb0VuHgOvO2mgywcZ8AGYSytfCw/gviz/chartiframe?authuser=0&amp;autosize=true&amp;oid=258377117&amp;resourcekey">
 			</iframe>
-			<iframe width="800" height="400" src="https://docs.google.com/spreadsheets/d/e/2CAIWO3em5TUhbz3vOwrLlARsN5ONhWxYtm4vEM87Ov2dPQffgcnNkGKdmb0VuHgOvO2mgywcZ8AGYSytfCw/gviz/chartiframe?authuser=0&amp;autosize=true&amp;oid=258377117&amp;resourcekey">
-				
+		</div>
+		<div>
+			<iframe  class="gr" src="https://docs.google.com/spreadsheets/d/e/2CAIWO3em5TUhbz3vOwrLlARsN5ONhWxYtm4vEM87Ov2dPQffgcnNkGKdmb0VuHgOvO2mgywcZ8AGYSytfCw/gviz/chartiframe?	authuser=0&amp;autosize=true&amp;oid=807694732&amp;resourcekey">
 			</iframe>
+		</div>
+	</div>	
+	<div class="h2">
+		<h2>Hospitales de Dia</h2>
 	</div>
-	<div>
-		<iframe width="800" height="400" src="https://docs.google.com/spreadsheets/d/e/2CAIWO3em5TUhbz3vOwrLlARsN5ONhWxYtm4vEM87Ov2dPQffgcnNkGKdmb0VuHgOvO2mgywcZ8AGYSytfCw/gviz/chartiframe?	authuser=0&amp;autosize=true&amp;oid=807694732&amp;resourcekey">
+	<div class="Carrusel">
+		
+		<div>
+			<img src="media/Cerro.jpg" class="imagenes" id="imgcar">
+		</div>
+		
+		<div>
+			<button class="izq boton" onclick="izquierda()">&#60</button>
+		</div>
+		<div>
+			<button class="der boton" onclick="derecha()">&#62</button>
+		</div>
 	</div>
+	
 </body>
 </html>
