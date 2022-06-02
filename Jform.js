@@ -8,15 +8,13 @@ var errorMensaje = document.getElementsByClassName("error");
 var correctoIco = document.getElementsByClassName("success-icon");
 var incorrectoIco = document.getElementsByClassName("failure-icon");
 var bolsita = [];
-
-//
-//errorMensaje[1].innerHTML = "Falta el Correo";
-//errorMensaje[2].innerHTML = "Falta el Mensaje";
+var regularMail = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+var resultado = document.getElementById("resultado");
 
 formulario.onsubmit = () => onSubmit()
 
 function onSubmit(){
-    console.log("submit");
+  
     //Json!!!!!!
     datos = {
         nombre: nombre.value,
@@ -26,13 +24,14 @@ function onSubmit(){
     if(validar()){
         bolsita.push(datos)
         console.log(bolsita)
+        verDatos()
         formulario.reset()
     }
     return false;
 }
 
 function validar(){
-    console.log("adentro validar")
+   
     let cont = 0;
     if(datos.nombre != ""){
         correcto(nombre, 0);
@@ -41,7 +40,7 @@ function validar(){
         error(nombre, 0);
         nombre.focus;
     }
-    if(datos.correo != ""){
+    if(regularMail.test(datos.correo)){ 
         correcto(correo, 1);
         cont++;
     }else{
@@ -67,13 +66,29 @@ function correcto(aux, posicion){
     incorrectoIco[posicion].style.opacity = "0";
     correctoIco[posicion].style.opacity = "1";
     errorMensaje[posicion].innerHTML = "";
-    console.log("lleno");
+    
 }
 
 function error(aux, posicion){
     aux.style.border = "2px solid red";
     incorrectoIco[posicion].style.opacity = "1";
     correctoIco[posicion].style.opacity = "0";
-    errorMensaje[posicion].innerHTML = "Falta el Nombre";
-    console.log("vacio");
+    if(posicion==0){
+        errorMensaje[posicion].innerHTML = "Falta el Nombre";
+    }else if (posicion == 1){
+        errorMensaje[posicion].innerHTML = "Falta el Correo";
+    }else{
+        errorMensaje[posicion].innerHTML = "Falta el Mensaje";
+    }
+}
+function verDatos(){
+     //limpia el appendChild
+     resultado.innerHTML = ""
+     let dat;
+     bolsita.forEach(aux=>{
+     dat = document.createElement("div")
+     dat.className = "resultado1"
+     dat.innerHTML = "<p>"+"Gracias "+aux.nombre + " . Nos pondremos a la brevedad en contacto con usted al Correo: "+ aux.correo +"</p>"
+     resultado.appendChild(dat)
+     })
 }

@@ -160,10 +160,10 @@ input {
 .failure-icon {
   right: 0;
   opacity: 0;
-  left: 920px;
+  /*left: 920px;*/
 }
 
-/* Reglas de estilo para botón enviar */
+/*  botón enviar */
 
 .boton{
     margin-top: 15px;
@@ -182,3 +182,23 @@ input {
   .boton:hover {
     opacity: 0.8;
   }
+
+  .resultado{
+    visibility: hidden;
+  
+}
+
+.resultado1{
+    visibility: visible;
+    background-color: white;
+    font-size: small;
+    margin: 10px auto;
+    max-width: 400px;
+    
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid green;
+    padding: 10px 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
