@@ -21,7 +21,7 @@ body {
 }
 
 /*Barra de Navegacion*/
-ul {
+.lista {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -29,31 +29,28 @@ ul {
   background-color: #38444d;
 }
 
-li {
+.list {
   float: left;
 }
-.active {
-  background-color: green;
-}
 
-li a, .dropbtn {
+.enlace, .menu {
   display: inline-block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  border-right:1px solid #bbb;
+  border-right:1px solid #bbb
 }
 
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: #64b9f1;
+.enlace:hover, .listado:hover .menu {
+  background-color: rgb(8, 200, 214);
 }
 
-li.dropdown {
+.listado {
   display: inline-block;
 }
 
-.dropdown-content {
+.contenido {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -62,7 +59,7 @@ li.dropdown {
   z-index: 1;
 }
 
-.dropdown-content a {
+.contenido a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -70,10 +67,12 @@ li.dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #bae0fa;}
-
-.dropdown:hover .dropdown-content {
+.listado:hover .contenido {
   display: block;
+}
+
+.activo { /*terminar*/
+  background-color: #04aa94;
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------*/

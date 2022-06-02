@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-<html lang = "es">
+<html lang="es">
+
 <head>
 	<link rel="stylesheet" type="text/css" href="Estilo.css">
 	<meta charset="utf-8">
 	<title>Estadisticas</title>
-	<link rel="icon"  href="media/estadico.ico">
+	<link rel="icon" href="media/estadico.ico">
 	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<script src="Jscript.js"></script>
 </head>
+
 <body onload="Iniciar()">
 	<header class="header">
 		<nav class="navegador">
 			<ul class="lista">
-				<li><a class="li" href="index.html">Inicio</a></li>
-				<li class="dropdown li">
-					<a href="Estadisticas.html" class="dropbtn active">Estadisticas</a>
-					<div class="dropdown-content">
-						<a class="li" href="Htal_Cerro.html">Hospital Cerro de la Cruz</a>
-						<a class="li" href="Htal_JuanaK.html">Hospital de Juana Koslay</a>
-						<a class="li" href="Htal_LaPunta.html">Hospital La Punta</a>
-						<a class="li" href="Htal_Sur.html">Hospital de Dia Sur</a>
-						<a class="li" href="Htal_Oeste.html">Hospital del Oeste</a>
+				<li class="list"><a class="enlace" href="index.html">Inicio</a></li>
+				<li class="list listado">
+					<a href="Estadisticas.html" class="enlace activo menu">Estadisticas</a>
+					<div class="contenido">
+						<a class="enlace" href="Htal_Cerro.html">Hospital Cerro de la Cruz</a>
+						<a class="enlace" href="Htal_JuanaK.html">Hospital de Juana Koslay</a>
+						<a class="enlace" href="Htal_LaPunta.html">Hospital La Punta</a>
+						<a class="enlace" href="Htal_Sur.html">Hospital de Dia Sur</a>
+						<a class="enlace" href="Htal_Oeste.html">Hospital del Oeste</a>
 					</div>
 				</li>
-				<li><a href="Nosotros.html">Sobre Nosotros</a></li>
-
+				<li class="list"><a class="enlace" href="Nosotros.html">Contactanos</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -33,7 +34,10 @@
 			Informe Semanal de Consultas
 		</h1>
 		<p>
-			Por nuestra misión y para garantizar su cumplimiento, se dispuso el registro diario de consultas en todos los Hospitales de Dia de Atención Primaria, registro que se vera detallado a continuación en Gráficos Globales y luego disgregados en cada uno de los Hospitales de Dia del Programa Atención Primaria de la Salud del Departamento Pueyrredon:
+			Por nuestra misión y para garantizar su cumplimiento, se dispuso el registro diario de consultas en todos
+			los Hospitales de Dia de Atención Primaria, registro que se vera detallado a continuación en Gráficos
+			Globales y luego disgregados en cada uno de los Hospitales de Dia del Programa Atención Primaria de la Salud
+			del Departamento Pueyrredon:
 
 			<br>*Total por Consultas por Especialidad
 
@@ -42,29 +46,32 @@
 			<br>*Total Diario de Atenciones Semanal
 		</p>
 	</div>
-	<div>	
+	<div>
 		<div>
-			<iframe class="gr" src="https://docs.google.com/spreadsheets/d/e/2CAIWO3em5TUhbz3vOwrLlARsN5ONhWxYtm4vEM87Ov2dPQffgcnNkGKdmb0VuHgOvO2mgywcZ8AGYSytfCw/gviz/chartiframe?authuser=0&amp;autosize=true&amp;oid=258377117&amp;resourcekey">
+			<iframe class="gr"
+				src="https://docs.google.com/spreadsheets/d/e/2CAIWO3em5TUhbz3vOwrLlARsN5ONhWxYtm4vEM87Ov2dPQffgcnNkGKdmb0VuHgOvO2mgywcZ8AGYSytfCw/gviz/chartiframe?authuser=0&amp;autosize=true&amp;oid=258377117&amp;resourcekey">
 			</iframe>
 		</div>
 		<div>
-			<iframe  class="gr" src="https://docs.google.com/spreadsheets/d/e/2CAIWO3em5TUhbz3vOwrLlARsN5ONhWxYtm4vEM87Ov2dPQffgcnNkGKdmb0VuHgOvO2mgywcZ8AGYSytfCw/gviz/chartiframe?	authuser=0&amp;autosize=true&amp;oid=807694732&amp;resourcekey">
+			<iframe class="gr"
+				src="https://docs.google.com/spreadsheets/d/e/2CAIWO3em5TUhbz3vOwrLlARsN5ONhWxYtm4vEM87Ov2dPQffgcnNkGKdmb0VuHgOvO2mgywcZ8AGYSytfCw/gviz/chartiframe?	authuser=0&amp;autosize=true&amp;oid=807694732&amp;resourcekey">
 			</iframe>
 		</div>
-	</div>	
+	</div>
 	<div class="h2">
 		<h2>Hospitales de Dia</h2>
 	</div>
 	<div class="Carrusel">
-		
+
 		<div>
 			<img src="media/Cerro.jpg" class="imagenes" id="imgcar">
-		
+
 			<button class="izq btnCarrusel" onclick="izquierda()">&#60</button>
-		
+
 			<button class="der btnCarrusel" onclick="derecha()">&#62</button>
 		</div>
 	</div>
-	
+
 </body>
+
 </html>
