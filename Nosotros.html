@@ -1,32 +1,72 @@
 <!DOCTYPE html>
 <html lang = "es">
 <head>
-	<link rel="icon"  href="media/InicioIco.ico">
-	<link rel="stylesheet" type="text/css" href="Estilo.css">
 	<meta charset="utf-8">
 	<title>Contacto</title>
+	<!--Reseteador de CSS-->
 	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<!--Estilos e iconos de Font Awesome-->
+	<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      crossorigin="anonymous"
+	  
+    />
+	<!--Icono de la hoja-->
+	<link rel="icon"  href="media/InicioIco.ico">
+	<!--Estilos de Css propios!-->
+	<link rel="stylesheet" type="text/css" href="Estilo.css">
 </head>
 <body>
 	<header>
 		<nav>
 			<ul>
-				<li><a href="Index.html">inicio</a></li>
+				<li><a href="Index.html">Inicio</a></li>
 				<li><a href="Estadisticas.html">Estadisticas</a></li>
 				<li><a href="Nosotros.html">Comunicate con Nosotros</a></li>
 			</ul>
 		</nav>
 	</header>
-	<form>
-			<input type="nombre" value="Aca va tu nombre">
-			<br>
-			<input type="email" value="Ingresa un correo ">
-			<br>
-			<textarea>texto predefinido en la caja de texto</textarea>
-			<br>
-			<input type="submit">
-			
+	<!--Formulario-->
+	<div class="contenedor">
+		<form id="formulario">
+			<div class="titulo">Contactanos!!!!</div>
+			<!-- Entrada de Nombre-->
+			<dix>
+				<label class="etiqueta">Nombre</label>
+				<i class="fas fa-user"></i>
+				<input type="text" name="nombre" id="nombre">
+				<!--Iconos-->
+				<i class="fas fa-exclamation-circle failure-icon" id="incorrecto"></i>
+    			<i class="far fa-check-circle success-icon" id="correcto"></i>
+				<div id="" class="error"></div>
+			</dix>
+			<!-- Entrada de Correo-->
+			<dix>
+				<label class="etiqueta">Correo</label>
+				<i class="far fa-envelope"></i>
+				<input type="email" name="correo" id="correo" >
+				<!--Iconos-->
+				<i class="fas fa-exclamation-circle failure-icon" id="incorrecto"></i>
+    			<i class="far fa-check-circle success-icon" id="correcto"></i>
+				<div id="" class="error"></div>
+			</dix>
+			<!-- Entrada de Mensaje-->
+			<dix>
+				<label class="etiqueta">Mensaje</label>
+				<i class="far fa-envelope-open"></i>
+				<textarea id="mensaje" ></textarea>
+				<!--Iconos-->
+				<i class="fas fa-exclamation-circle failure-icon" id="incorrecto"></i>
+    			<i class="far fa-check-circle success-icon" id="correcto"></i>
+				<div id="" class="error"></div>
+			</dix>
+			<div>
+				<button id="boton" class="boton" type="submit">Enviar</button>
+			</div>
+		</form>
 
-	</form>
+	</div>
+	<script src="Jform.js"></script>
 </body>
 </html>
