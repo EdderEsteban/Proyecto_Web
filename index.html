@@ -1,23 +1,35 @@
 <!DOCTYPE html>
-<html lang = "es">
+<html lang="es">
+
 <head>
 	<meta charset="utf-8">
 	<title>
 		Inicio
 	</title>
-	<link rel="icon"  href="media/inicioIco.ico">
+	<link rel="icon" href="media/inicioIco.ico">
 	<link rel="stylesheet" type="text/css" href="Estilo.css">
 	<link rel="stylesheet" type="text/css" href="normalize.css">
-	
+
 </head>
+
 <body>
-	
-	<header>
-		<nav>
-			<ul>
-				<li><a href="Index.html">Inicio</a></li>
-				<li><a href="Estadisticas.html">Estadisticas</a></li>
-				<li><a href="Nosotros.html">Comunicate con Nosotros</a></li>
+
+	<header class="header">
+		<nav class="navegador">
+			<ul class="lista">
+				<li><a class="active li" href="index.html">Inicio</a></li>
+				<li class="dropdown li">
+					<a href="Estadisticas.html" class="dropbtn">Estadisticas</a>
+					<div class="dropdown-content">
+						<a class="li" href="Htal_Cerro.html">Hospital Cerro de la Cruz</a>
+						<a class="li" href="Htal_JuanaK.html">Hospital de Juana Koslay</a>
+						<a class="li" href="Htal_LaPunta.html">Hospital La Punta</a>
+						<a class="li" href="Htal_Sur.html">Hospital de Dia Sur</a>
+						<a class="li" href="Htal_Oeste.html">Hospital del Oeste</a>
+					</div>
+				</li>
+				<li><a href="Nosotros.html">Sobre Nosotros</a></li>
+
 			</ul>
 		</nav>
 	</header>
@@ -30,23 +42,26 @@
 		</h3>
 		<img class="minis" src="media/Ministerio.jpg">
 		<p>
-			Ministerio de Salud, San Luis, Argentina. Edificio Proyección al Futuro 
+			Ministerio de Salud, San Luis, Argentina. Edificio Proyección al Futuro
 		</p>
 
 		<h4>
 			Nuestra Mision
 		</h4>
 		<p>
-			La Misión del Programa Atención Primaria de la Salud es garantizar el derecho a la salud como fundamental de la persona, a través de la promoción de la Salud, prevención de enfermedades, provisión de servicios de atención y la rehabilitación. Para ello debe profundizar la gobernanza de salud, a través de la rectoría, regulación, planificación y coordinación, articulando a los actores del sistema, con VALORES tales como:
-			<ul class="list1">
-				<li>El derecho a la salud</li>
-				<li>Equidad social</li>
-				<li>Solidaridad</li>
-			</ul>
-			
+			La Misión del Programa Atención Primaria de la Salud es garantizar el derecho a la salud como fundamental de
+			la persona, a través de la promoción de la Salud, prevención de enfermedades, provisión de servicios de
+			atención y la rehabilitación. Para ello debe profundizar la gobernanza de salud, a través de la rectoría,
+			regulación, planificación y coordinación, articulando a los actores del sistema, con VALORES tales como:
+			<p>El derecho a la salud</p>
+			<p>Equidad social</p>
+			<p>Solidaridad</p>
+		</ul>
+
 		</p>
 	</article>
 
-	
+
 </body>
+
 </html>
