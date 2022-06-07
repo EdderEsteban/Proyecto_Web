@@ -38,21 +38,21 @@ function validar(){
         cont++;
     }else{
         error(nombre, 0);
-        nombre.focus;
+        nombre.focus();
     }
     if(regularMail.test(datos.correo)){ 
         correcto(correo, 1);
         cont++;
     }else{
         error(correo, 1);
-        correo.focus;
+        correo.focus();
     }
     if(datos.mensaje != ""){
         correcto(mensaje, 2);
         cont++;
         }else{
         error(mensaje, 2);
-        mensaje.focus;
+        mensaje.focus();
     }
     if(cont == 3){
         return true;
@@ -61,18 +61,19 @@ function validar(){
     }
 }
 
-function correcto(aux, posicion){
-    aux.style.border = "2px solid green";
-    incorrectoIco[posicion].style.opacity = "0";
-    correctoIco[posicion].style.opacity = "1";
+function correcto(elemento, posicion){
+    elemento.classList.remove("bordeRojo")
+    incorrectoIco[posicion].classList.remove("mostrarIco");
+    elemento.classList.add("bordeVerde");
+    correctoIco[posicion].classList.add("mostrarIco")
     errorMensaje[posicion].innerHTML = "";
     
 }
 
-function error(aux, posicion){
-    aux.style.border = "2px solid red";
-    incorrectoIco[posicion].style.opacity = "1";
-    correctoIco[posicion].style.opacity = "0";
+function error(elemento, posicion){
+    elemento.classList.add("bordeRojo");
+    incorrectoIco[posicion].classList.add("mostrarIco");
+    correctoIco[posicion].classList.remove("mostrarIco")
     if(posicion==0){
         errorMensaje[posicion].innerHTML = "Falta el Nombre";
     }else if (posicion == 1){

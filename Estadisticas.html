@@ -19,7 +19,7 @@
 					<a href="Estadisticas.html" class="enlace activo menu">Estadisticas</a>
 					<div class="contenido">
 						<a class="enlace" href="Htal_Cerro.html">Hospital Cerro de la Cruz</a>
-						<a class="enlace" href="Htal_JuanaK.html">Hospital de Juana Koslay</a>
+						<a class="enlace" href="Htal_JKoslay.html">Hospital de Juana Koslay</a>
 						<a class="enlace" href="Htal_LaPunta.html">Hospital La Punta</a>
 						<a class="enlace" href="Htal_Sur.html">Hospital de Dia Sur</a>
 						<a class="enlace" href="Htal_Oeste.html">Hospital del Oeste</a>
@@ -30,48 +30,74 @@
 		</nav>
 	</header>
 	<div>
-		<h1>
+		<div class="t1">
+			<h1>
+				Informe Estadistico
+			</h1>
+		</div>
+		<div class="parrafo">
+			<p>
+				Por nuestra misión y para garantizar su cumplimiento, se dispuso el registro diario de consultas en
+				todos
+				los Hospitales de Dia de Atención Primaria, registro que se vera detallado a continuación en Gráficos
+				Globales y luego disgregados en cada uno de los Hospitales de Dia del Programa Atención Primaria de la
+				Salud
+				del Departamento Pueyrredon:
+
+			<p>*Total por Consultas por Especialidad</p>
+			<p>*Total de Atenciones por Consultas</p>
+			<p>*Total Diario de Atenciones Semanal</p>
+			</p>
+		</div>
+	</div>
+
+	<div class="t2">
+		<h2>Galeria de Hospitales de Dia</h2>
+	</div>
+
+	<div class="Carrusel">
+		<div class="contenedor">
+			<div>
+				<button class="izq btnCarrusel" id="izquierda" onclick="izquierda()">&#60</button>
+			</div>
+			<div>
+				<button class="enlaceCarrusel" id="enlace" onclick="cambiarEnlace()"><img src="media/Cerro.jpg"
+						class="imagenes" id="imgcar"></button>
+
+			</div>
+			<div>
+				<button class="der btnCarrusel" id="derecha" onclick="derecha()">&#62</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="t2">
+		<h3 class=>
 			Informe Semanal de Consultas
-		</h1>
-		<p>
-			Por nuestra misión y para garantizar su cumplimiento, se dispuso el registro diario de consultas en todos
-			los Hospitales de Dia de Atención Primaria, registro que se vera detallado a continuación en Gráficos
-			Globales y luego disgregados en cada uno de los Hospitales de Dia del Programa Atención Primaria de la Salud
-			del Departamento Pueyrredon:
+		</h3>
+	</div>
+	<div class="graficosEst">
 
-			<br>*Total por Consultas por Especialidad
 
-			<br>*Total de Atenciones por Consultas
 
-			<br>*Total Diario de Atenciones Semanal
-		</p>
+		<iframe
+			src="https://docs.google.com/spreadsheets/d/e/2CAIWO3em5TUhbz3vOwrLlARsN5ONhWxYtm4vEM87Ov2dPQffgcnNkGKdmb0VuHgOvO2mgywcZ8AGYSytfCw/gviz/chartiframe?authuser=0&amp;autosize=true&amp;oid=258377117&amp;resourcekey">
+		</iframe>
+
+		<iframe
+			src="https://docs.google.com/spreadsheets/d/e/2CAIWO3em5TUhbz3vOwrLlARsN5ONhWxYtm4vEM87Ov2dPQffgcnNkGKdmb0VuHgOvO2mgywcZ8AGYSytfCw/gviz/chartiframe?	authuser=0&amp;autosize=true&amp;oid=807694732&amp;resourcekey">
+		</iframe>
+
+
 	</div>
 	<div>
-		<div>
-			<iframe class="gr"
-				src="https://docs.google.com/spreadsheets/d/e/2CAIWO3em5TUhbz3vOwrLlARsN5ONhWxYtm4vEM87Ov2dPQffgcnNkGKdmb0VuHgOvO2mgywcZ8AGYSytfCw/gviz/chartiframe?authuser=0&amp;autosize=true&amp;oid=258377117&amp;resourcekey">
-			</iframe>
-		</div>
-		<div>
-			<iframe class="gr"
-				src="https://docs.google.com/spreadsheets/d/e/2CAIWO3em5TUhbz3vOwrLlARsN5ONhWxYtm4vEM87Ov2dPQffgcnNkGKdmb0VuHgOvO2mgywcZ8AGYSytfCw/gviz/chartiframe?	authuser=0&amp;autosize=true&amp;oid=807694732&amp;resourcekey">
-			</iframe>
-		</div>
+		<footer class="pie">
+			<p class="txt">
+				Pagina creada por Edder Santibañez
+			<p class="txt"><a href="Nosotros.html"><b>Contactanos</b></a></p>
+			</p>
+		</footer>
 	</div>
-	<div class="h2">
-		<h2>Hospitales de Dia</h2>
-	</div>
-	<div class="Carrusel">
-
-		<div>
-			<img src="media/Cerro.jpg" class="imagenes" id="imgcar">
-
-			<button class="izq btnCarrusel" onclick="izquierda()">&#60</button>
-
-			<button class="der btnCarrusel" onclick="derecha()">&#62</button>
-		</div>
-	</div>
-
 </body>
 
 </html>
