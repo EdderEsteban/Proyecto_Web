@@ -28,7 +28,6 @@ var imagenes = [
 ]
 
 var enlace = document.getElementById("enlace");
-
 var title = document.getElementById("titulo");
 var picture;
 var cont = 0;
@@ -43,12 +42,9 @@ function Iniciar() {
 function derecha() {
     if (cont < imagenes.length - 1) {
         picture.src = imagenes[cont +1].src;
-       console.log(imagenes[cont+1].titulo)
-       
         cont++;
     } else {
         picture.src = imagenes[0].src;
-        
         cont = 1;
     }
 }
